@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Image and text -->
+    <!--Funawesome CDN-->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <!--  <img class="mr-3" img src="" alt="Generic placeholder image" width="50" height="30">-->
+        <div class="text-center">
+            <a class="navbar-brand text-white" href="transformation.html">
+                <h4><b><i> KROME FITNESS </i></b></h4>
+            </a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <b> 21 Day Challenge </b>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'transformation'%}">Home</a>
+                    <a class="dropdown-item" href="{% url 'mw'%}"> Monday & Wednesday </a>
+                    <a class="dropdown-item" href="{% url 'tt'%}"> Tuesday & Thursday </a>
+                    <a class="dropdown-item" href="{% url 'meals'%}"> Nutrition Guide </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center my-4">
+            <img src="/media/krome_log.jpg" class="rounded" alt="..." height="300" width="400">
+            <div class="col-md  mr-2 my-2 p-2">
+                <div class="card justify-text-center" height="400" width="500">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-md">
+                    <table class="table bg-white">
+                        <thead class="bg-dark">
+                            <tr class="text-white">
+                                <th scope="col-md"> Mobility Stretches </th>
+                                <th scope="col-md"> Sets / Reps </th>
+                                <th scope="col-md"> Dynamic Movements </th>
+                                <th scope="col-md"> Sets / Reps </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><a href="https://youtube.com/shorts/Yd0vcoMmb6c?feature=share"
+                                        class="Cat-Camel-Stretch"> Cat Camel Stretch </td>
+                                <td><i> 1 / 8 </i></td>
+                                <td><a href="https://youtu.be/bjDUyF7CW6M?si=qp_gWE47XL8ZMFys" class="Knee-Pulls"> Knee
+                                        Pulls </td>
+                                <td><i> 1 / 10 ea </i></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://youtube.com/shorts/Oioq8Kovhzc?feature=share" class="Bird-Dogs">
+                                        Bird Dogs </td>
+                                <td><i> 1 / 5 ea </i></td>
+                                <td><a href="https://youtu.be/opNcNWGAp1U?si=pyrHQCV60dvvPDRQ" class="Quad-Pulls"> Quad
+                                        Pulls </td>
+                                <td><i> 1 / 10 ea </i></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://youtube.com/shorts/aYH41yEYST0" class="Piriformis"> Piriformis
+                                </td>
+                                <td><i> 1 / 20 sec ea </i></td>
+                                <td><a href="https://youtu.be/l4pY8TBMTe0?si=1l-TuDHH0lb4AR27" class="Toe-Swoops"> Toe
+                                        Swoops </td>
+                                <td><i> 1 / 10 ea </i></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://youtube.com/shorts/QxbFiKb3OLc?feature=shareHamstring"
+                                        class="Hamstring-Pulls"> Hamstring Pulls </td>
+                                <td><i> 1 / 10 ea </i></td>
+                                <td><a href="https://youtu.be/fwc0nrqAdjk?si=OZPLu-Q_7UgQ9-6X" class="Lateral-Lunges">
+                                        Lateral Lunges </td>
+                                <td><i> 1 / 10 ea </i></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://youtube.com/shorts/ijxKkufICpU?feature=share"
+                                        class="T-Spine-Rotation"> T-Spine Rotation </td>
+                                <td><i> 1 / 5 ea </i></td>
+                                <td><a href="https://youtu.be/8bLY3DrYcoQ?si=Bh9SkMWUsUjFnmJM"
+                                        class="Hip-Capsule-Stretch"> Hip Capsule Stretch </td>
+                                <td><i> 1 / 10 ea </i></td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--Table-->
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-md">
+                    <table class="table bg-white">
+                        <thead class="bg-dark">
+                            <tr class="text-white">
+                                <th scope="col-md"> Block </th>
+                                <th scope="col-md"> Movement </th>
+                                <th scope="col-md"> Exercise </th>
+                                <th scope="col-md"> Sets </th>
+                                <th scope="col-md"> Reps </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b> A </b></td>
+                                <td><b><i> PLYOMETRICS </i></b></td>
+                                <td><a href="https://youtu.be/dF6Y585l3VI?si=b11THYAgUWAX-Yp6" class="Squat-Jump">
+                                        Squat Jumps </a></td>
+
+                                <td><b> 3 </b></td>
+                                <td><i> 10-12 reps </i></td>
+                            </tr>
+                            <tr>
+                                <td><b> B </b></td>
+                                <td><b><i> CARDIO </i></b></td>
+                                <td><a href="https://youtu.be/cMGdU5L5eOU?si=ez31CG0AJ9IKjbux" class="High-
+                                    Knees"> High Knees </td>
+                                <td><b> 3 </b></td>
+                                <td><i> 20-45 sec </i></td>
+                            </tr>
+                            <tr>
+                                <td><b> C </b></td>
+                                <td><b><i> STRENGTH </i></b></td>
+                                <td><a href="https://youtu.be/giOeuU1DRxc?si=BWWh50YqW6wQD9Cf" class="Squats"> Squats
+                                </td>
+                                <td><b> 3 </b></td>
+                                <td><i> 15-20 reps </i></td>
+                            </tr>
+                            <tr>
+                                <td><b> C </b></td>
+                                <td><b><i> STRENGTH </i></b></td>
+                                <td><a href="https://youtu.be/YHl4R0iZsLs?si=6pzVP5GNEQm14WHZ" class="Push-Ups"> Push
+                                        Ups
+                                </td>
+                                <td><b> 3 </b></td>
+                                <td><i> 10-15 reps </i></td>
+                            </tr>
+                            <tr>
+                                <td><b> D </b></td>
+                                <td><b><i> METABOLIC CONDITIONING </i></b></td>
+                                <td><a href="https://youtu.be/4gigVeKvLuE?si=KA2ymzG63fMHt7aA"
+                                        class="Mountain-Climbers"> Mountain Climbers </td>
+                                <td><b> 3 </b></td>
+                                <td><i> 20-45 sec </i></td>
+                            </tr>
+                            <tr>
+                                <td><b> E </b></td>
+                                <td><b><i> CORE </i></b></td>
+                                <td><a href="https://youtu.be/sQKLmZiWQqk?si=0V0KD9MzsrfvMi5_" class="Plank-Ups"> Plank
+                                        Ups </td>
+                                <td><b>3 </b></td>
+                                <td><i> 20-45 sec </i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Table-->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2024 KROME Fitness. All rights reserved.</p>
+</footer>
+
+</html>

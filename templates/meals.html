@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Image and text -->
+    <!--Funawesome CDN-->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <!--  <img class="mr-3" img src="" alt="Generic placeholder image" width="50" height="30">-->
+        <div class="text-center">
+            <a class="navbar-brand text-white" href="template/krome_home.html">
+                <h4><b><i> KROME FITNESS </i></b></h4>
+            </a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <b> 21 Day Challenge </b>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'transformation'%}">Home</a>
+                    <a class="dropdown-item" href="{% url 'mw'%}l"> Monday & Wednesday </a>
+                    <a class="dropdown-item" href="{% url 'tt'%}"> Tuesday & Thursday </a>
+                    <a class="dropdown-item" href="{% url 'meals'%}"> Nutrition Guide </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center my-4">
+            <img src="/media/krome_log.jpg" class="rounded" alt="..." height="300" width="400">
+            <div class="col-md  mr-2 my-2 p-2">
+                <div class="card justify-text-center" height="400" width="500">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark " id="headingOne">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        id="scrollspyHeading1">
+                        <h6><b><i>1st Meal - Breakfast</i></b></h6>
+                    </button>
+                </div>
+            </div>
+            <center>
+                <h7><b><i>Choose One Option</i></b></h7>
+            </center>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="text-center mr-4">
+                    <center>
+                        <h4><b><i><u>Option 1 - Breakfast Taco Bowl</u></i></b></h4>
+                        <img src="/media/break_one.jpg" class="rounded" alt="..." height="300" width="400">
+                        <div class="col-md my-2 p-2">
+                            <div class="card justify-text-center mr-2">
+                                <ol class="font-italic">
+                                    <p>
+                                        <h10><i>*Recipe contains Eggs</i></h10>
+                                    </p>
+                                    <p>
+                                        <h10>Total prep time - 10 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10>Preparation - 5 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10>Cooking - 5 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10><b>450 Calories: 34g Protein, 46g Carbs, 16g Fat<h4></b></h10>
+                                    </p>
+
+                                    <p>
+                                    <h4><b><i><u>Ingredients for 1 serving</u></i></b></h4>
+                                    </p>
+
+                                    <p><sup>3</sup>/<sub>4</sub> cup (180 g) Black beans canned</p>
+                                    <p><sup>1</sup>/<sub>3</sub> avocado Avocados raw</p>
+                                    <p><sup>1</sup>/<sub>4</sub> cup of salsa</p>
+                                    <p>2 tablespoons of olive oil</p>
+                                    <p>½ cup (122 g) Egg white</p>
+                                    <p>1 large egg</p>
+
+                                    <p>
+                                    <h3><b><i><u>Directions</u></i></b></h3>
+                                    </p>
+
+                                    <p> In a bowl, whisk together the egg white and whole egg. </p>
+
+                                    <p> Season with salt and pepper to taste. Heat a pan over </p>
+
+                                    <p> low heat and lightly spray with oil. Pour in the egg </p>
+
+                                    <p> mixture and cook gently, stirring constantly, until the </p>
+
+                                    <p> eggs are soft and fully cooked. Assemble the bowl.Begin </p>
+
+                                    <p> by placing the scrambled eggs the bowl. Add a the black</p>
+
+                                    <p> beans next to the eggs, and chopped tomato. Finish </p>
+
+                                    <p> by adding slices of avocado. </p>
+                                </ol>
+                            </div>
+                        </div>
+                        <h4><b><i><u>Option 2 - Creamy Scramble Eggs (Low Carb)</u></i></b></h4>
+                        <img src="/media/break_two.jpg" class="rounded" alt="..." height="300" width="400">
+                        <div class="col-md my-2 p-2">
+                            <div class="card justify-text-center mr-2 ">
+                                <ol class=" font-italic">
+                                    <p>
+                                        <h10><i>*Recipe contains Eggs</i></h10>
+                                    </p>
+                                    <p>
+                                        <h10>Total prep time - 10 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10>Preparation - 5 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10>Cooking - 5 minutes</h10>
+                                    </p>
+                                    <p>
+                                        <h10><b>520 Calories: 36g Protein, 26g Carbs, 30g Fat</b></h10>
+                                    </p>
+                                    <p>
+                                    <h3><b><i><u>Ingredients for 1 serving</u></i></b></p>
+                                    </h3>
+                                    <p>2 tablespoons of olive oil</p>
+                                    <p>40 g(1.41 oz) light sour cream</p>
+                                    <p>3-5 Eggs</p>
+                                    <p>1 slice whole wheat bread</p>
+                                    <p>½ cup cut strawberrys</p>
+
+                                    <p>
+                                    <h3><b><i><u>Directions</u></i></b></h3>
+                                    </p>
+
+                                    <p> Heat a pan over low-medium heat. Whisk the eggs and add </p>
+
+                                    <p> salt and Pepper to taste. Spray the pan with vegetable </p>
+
+                                    <p> oil and pour the eggs. Keep the heat at low to medium. </p>
+
+                                    <p> Once it looks slightly cooked, begin whisking and </p>
+
+                                    <p> the cream gradually add. Keep whisking until thoroughly </p>
+
+                                    <p> combined and cooked. Try not to overcook; it should only </p>
+
+                                    <p> take a couple of minutes to achieve a smoother texture. </p>
+
+                                    <p> Assemble the plate with the creamy eggs, toast and </p>
+
+                                    <p> strawberries. </p>
+                                </ol>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingTwo">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+                        id="scrollspyHeading2">
+                        <h6><b><i>2nd Meal - Protein & Snacks</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <h4><b><i><u>Option 1 - Protein Shake</u></i></b></h4>
+                    <img src="/media/phormulaone.png" class="rounded" alt="..." height="400" width="400">
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <p> There are many different protein powders to choose from, </p>
+
+                                <p> so it is best you find one you like or are familiar with. </p>
+
+                                <p> Make sure it is an isolate whey protien since our focus is </p>
+
+                                <p> weight loss and getting back in shape. KROME Fitness recommends </p>
+
+                                <p> 1st Phorm Level 1 and Phormula 1 because they use the highest </p>
+
+                                <p> quality whey protein, in addition to using a Low temperature </p>
+
+                                <p> processed cross flow filtration system, it serves as one of the </p>
+
+                                <p> best protein powders on the market. </p>
+                            </ol>
+                        </div>
+                </center>
+                <center>
+                    <h4><b><i><u>Option 2 - Snack Choices (Choose One or Two)</u></i></b></h4>
+                    <div class="col-md my-2 p-2">
+                        <div class="card justify-text-center mr-2 ">
+                            <ol class="font-italic">
+                                <p> 4-6 oz Greek Yogurt </p>
+                                <p> ½ cup Cottage Cheese </p>
+                                <p> ½ cup of Almonds </p>
+                                <p> ½ cup Mixed Nuts </p>
+                                <p> Piece or 1 cup of fruit (your choice from Carbohydrate list below) </p>
+                                <p> 2 oz of beef jerkey (your choice) </p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingThree">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+                        id="scrollspyHeading3">
+                        <h6><b><i>3rd Meal - Lunch</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <h4><b><i><u>Option 1 - High Protien Lunch Box</u></i></b></h4>
+                    <img src="/media/lunch_one.png" class="rounded" alt="..." height="300" width="400">
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <p>
+                                    <h10>Total prep time - 5 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10>Preparation - 5 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10><b>360 Calories: 21g Protein, 33g Carbs, 18g Fat</b></h10>
+                                </p>
+                                <p>
+                                <h3><b><i><u>Ingredients for 1 serving</u></i></b></h3>
+                                </p>
+                                <p>1 ½ oz of sliced Turkey</p>
+                                <p><b>*Vegitarians will have salad with spinach leaves and veggies of your choice</b>
+                                </p>
+                                <p>½ oz Reduced Colby Jack Cheese. Can increase to 3 hard boiled egg whites.)</p>
+                                <p>½ mashed Avacado</p>
+                                <p>2 Hard boiled Egg whites</p>
+                                <p>½ cup unsalted almonds</p>
+                                <p>1 green apple (whole or sliced)</p>
+
+                                <p>
+                                <h3><b><i><u>Directions</u></i></b></h3>
+                                </p>
+                                <p> Heat 1 tablespoon oil in a large broiler-safe skillet over </p>
+
+                                <p> Assemble the sandwich by layering the turkey, cheese, and </p>
+
+                                <p> avocado on the lettuce leaf, then roll it tightly and wrap </p>
+
+                                <p> in plastic wrap. Serve the sandwich with the egg whites, </p>
+
+                                <p> almonds, green apple, and baby carrots. </p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <h4><b><i><u>Option 2 - Avacado Grilled Chicken Wrap</u></i></b></h4>
+                    <img src="/media/avwrap.jpg" class="rounded" alt="..." height="300" width="400">
+                    <div class="col-md my-2 p-2">
+                        <div class="card justify-text-center mr-2 ">
+                            <ol class="font-italic">
+                                <p>
+                                    <h10>Total prep time - 17 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10>Preparation - 10 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10>Cooking - 5 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10><b>353 Calories: 18g Protein, 28g Carbs, 19g Fat</b></h10>
+                                </p>
+                                <p>
+                                <h3><b><i><u>Ingredients for 1 serving</u></i></b></h3>
+                                </h3>
+                                <p>1 ounce cream cheese, at room temperature</p>
+                                <p>¼ medium avocado, mashed</p>
+                                <p>1 teaspoon lemon juice or rice vinegar</p>
+                                <p>⅛ teaspoon salt, ⅛ teaspoon ground pepper</p>
+                                <p>2 tablespoons chopped fresh herbs such as parsley, dill and/or basil</p>
+                                <p>1 (8 inch) whole-wheat tortilla</p>
+                                <p>¼ - ½ cup shredded or grilled cooked chicken</p>
+                                <p><b>*Vegitarians no chicken, Sub options- ground or chopped black bean patty,
+                                        traditonal
+                                        black beans, or veggies of your choice</b></p>
+                                <p>2 tablespoons shredded carrots</p>
+                                <p>6 thin slices cucumber</p>
+                                <p>½ cup mixed salad greens</p>
+                                <p>½ cup cut strawberrys</p>
+
+                                <p>
+                                <h3><b><i><u>Directions</u></i></b></h3>
+                                </p>
+
+                                <p>Stir cream cheese, avocado, lemon juice (or vinegar), salt </p>
+
+                                <p> and pepper together in a small bowl. Add herbs and stir </p>
+
+                                <p> until well blended. Spread the mixture evenly on tortilla. </p>
+
+                                <p> Top with chicken, carrot, cucumber and greens, then </p>
+
+                                <p> roll up like a burrito. </p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingFour">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"
+                        id="scrollspyHeading4">
+                        <h6><b><i>4th Meal - Protein & Snacks</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <h4><b><i><u>Option 1 - Protein Shake</u></i></b></h4>
+                    <img src="/media/phormulaone.png" class="rounded" alt="..." height="400" width="400">
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <p> There are many different protein powders to choose from, </p>
+
+                                <p> so it is best you find one you like or are familiar with. </p>
+
+                                <p> Make sure it is an isolate whey protien since our focus is </p>
+
+                                <p> weight loss and getting back in shape. KROME Fitness recommends </p>
+
+                                <p> 1st Phorm Level 1 and Phormula 1 because they use the highest </p>
+
+                                <p> quality whey protein, in addition to using a Low temperature </p>
+
+                                <p> processed cross flow filtration system, it serves as one of the </p>
+
+                                <p> best protein powders on the market. </p>
+                            </ol>
+                        </div>
+                </center>
+                <center>
+                    <h4><b><i><u>Option 2 - Snack Choices (Choose One or Two)</u></i></b></h4>
+                    <div class="col-md my-2 p-2">
+                        <div class="card justify-text-center mr-2 ">
+                            <ol class="font-italic">
+                                <p> 4-6 oz Greek Yogurt </p>
+                                <p> ½ cup Cottage Cheese </p>
+                                <p> ½ cup of Almonds </p>
+                                <p> ½ cup Mixed Nuts </p>
+                                <p> Piece or 1 cup of fruit (your choice from Carbohydrate list below) </p>
+                                <p> 2 oz of beef jerkey (your choice) </p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingFive">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"
+                        id="scrollspyHeading5">
+                        <h6><b><i>Meal 5 - Dinner</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+
+                <center>
+                    <h4><b><i><u>Option 1 - Cheesy Portobello Chicken Cutlets with Broccoli</u></i></b></h4>
+                    <img src="/media/din_two.jpg" class="rounded" alt="..." height="300" width="400">
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <p>
+                                    <h10>Total prep time - 30 minutes</h10>
+                                </p>
+
+                                <p>
+                                    <h10>Preparation - 10 minutes</h10>
+                                </p>
+
+                                <p>
+                                    <h10>Cooking - 20 minutes</h10>
+                                </p>
+
+                                <p>
+                                    <h10><b>376 Calories: 37g Protein, 12g Carbs, 19g Fat</b></h10>
+                                </p>
+
+                                <p>
+                                <h3><b><i><u> Ingredients for 4 servings</u></i></b> </h3>
+                                </p>
+
+                                <p>2 tablespoons extra-virgin olive oil, divided</p>
+                                <p>4 chicken cutlets (about 1 pound)
+                                </p>
+                                <p><b>*Vegitarians no chicken, add veggies of your choice</b></p>
+                                <p>½ teaspoon salt, divided</p>
+                                <p>½ teaspoon ground pepper, divided</p>
+                                <p>1 large head broccoli, cut into 2- to 3-inch spears</p>
+                                <p>¼ cup water</p>
+                                <p>1 cup sliced onion</p>
+                                <p>1 large portobello mushroom cap, stem and gills removed, sliced</p>
+                                <p>2 tablespoons balsamic vinegar</p>
+                                <p>2 tablespoons Worcestershire sauce</p>
+                                <p>1 teaspoon Dijon mustard</p>
+                                <p>2 tablespoons chopped fresh thyme, plus more for garnish</p>
+                                <p>4 ounces sliced Gruyère cheese</p>
+                                <p>Chopped fresh parsley for garnish</p>
+
+                                <p>
+                                <h3><b><i><u>Directions</u></i></b></h3>
+                                </p>
+
+                                <p> Heat 1 tablespoon oil in a large broiler-safe skillet over </p>
+
+                                <p> medium -high heat. Season chicken with 1/4 teaspoon each </p>
+
+                                <p> salt and pepper and add to the pan. Cook, flipping once, </p>
+
+                                <p> until golden and an instant -read thermometer inserted </p>
+
+                                <p> in the thickest part registers 165°F, about 6 minutes. </p>
+
+                                <p>Transfer to a plate.</p>
+
+                                <p> Reduce heat to medium. Add 2 teaspoons oil and broccoli to </p>
+
+                                <p> the pan. Cook, stirring occasionally, until browned, about </p>
+
+                                <p> 5 minutes. Add water, cover and cook until tender, about </p>
+
+                                <p> 5 minutes more. Transfer to the plate with the chicken. </p>
+
+                                <p> Add the remaining 1 teaspoon oil, onion and mushroom to </p>
+
+                                <p> the pan. Cook, stirring occasionally, until lightly browned, </p>
+
+                                <p> 5 to 8 minutes. Stir in vinegar, Worcestershire, mustard, </p>
+
+                                <p> thyme the remaining 1/4 teaspoon each salt and pepper, and </p>
+
+                                <p> any accumulated chicken juices from the plate. Cook, </p>
+
+                                <p> stirring and scraping up any browned bits, for 1 minute. </p>
+
+                                <p> Meanwhile, position rack in upper third of oven; preheat </p>
+
+                                <p> broiler to high Return the chicken to the pan and spoon the </p>
+
+                                <p> mushroom mixture on top. Arrange the broccoli around the </p>
+
+                                <p> chicken. Top with cheese.Broil until the cheese is golden </p>
+
+                                <p> brown, 1 to 2 minutes. Serve topped with parsley and/or more </p>
+
+                                <p> thyme, if desired. </p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <h4>Option 2 - Cheesburger Lettuce Wrap</h4>
+                    <img src="/media/lettuceburger.jpg" class="rounded" alt="..." height="300" width="400">
+                    <div class="col-md my-2 p-2">
+                        <div class="card justify-text-center mr-2 ">
+                            <ol class="font-italic">
+                                <p>
+                                    <h10>Total prep time - 30 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10>Preparation - 15 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10>Cooking - 15 minutes</h10>
+                                </p>
+                                <p>
+                                    <h10><b>290 Calories: 23g Protein, 5g Carbs, 19g Fat</b></h10>
+                                </p>
+                                <p>
+                                <h3><b><i><u>Ingredients for 1 serving</u></i></b></h3>
+                                </p>
+
+                                <p><sup>1</sup>/<sub>4</sub> lb ground beef (80/20 lean-to-fat ratio) </p>
+                                <p><b>*Vegetarians sub Portabella Mushroom or</b></p>
+                                <p><b>Black Bean Burger or Garden Veggie Burger patty for beef</b></p>
+                                <p>Salt and pepper to taste</p>
+                                <p>1 slice cheddar cheese</p>
+                                <p>2 large iceberg lettuce leaves</p>
+                                <p>1 slice tomato</p>
+                                <p>1 slice red onion</p>
+                                <p>1 tbsp sugar-free ketchup</p>
+                                <p>1 tbsp mustard</p>
+
+                                <p>
+                                <h3><b><i><u>Directions</u></i></b> </h3>
+                                </p>
+                                <p>Season the ground beef with salt and pepper, then form </p>
+
+                                <p>into a patty. Grill or pan-fry the patty to your desired</p>
+
+                                <p>doneness. Top with cheese and let it melt slightly. Arrange</p>
+
+                                <p>the lettuce leaves to form a “bun.” Place the patty on one</p>
+
+                                <p>leaf, then top with tomato, onion, ketchup, and mustard.Cover</p>
+
+                                <p>with the second leaf and enjoy!</p>
+
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingSix">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"
+                        id="scrollspyHeading6">
+                        <h6><b><i>Carbohydrates Substitution List</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <h4><i>Fruits</i></h4>
+                                <p>Apples</p>
+                                <p>Bananas</p>
+                                <p>Berries (Any type)</p>
+                                <p>Cherries</p>
+                                <p>Grapefruit</p>
+                                <p>Grapes</p>
+                                <p>Kiwi</p>
+                                <p>Lemon</p>
+                                <p>Oranges</p>
+                                <p>Peaches</p>
+                                <p>Pears</p>
+                                <p>Pineapple</p>
+                                <p>Plums</p>
+                                <p>Strawberries</p>
+                                <p>Tomato</p>
+                                <p>Watermelon</p>
+                                <p>Dried Cranberries (Low Sugar)</p>
+                                <p>Raisins (Low Sugar)</p>
+                                <p></p>
+                            </ol>
+                        </div>
+                        <div>
+                            <h4><i>Vegetables</i></h4>
+                            <div class="col-md my-2 p-2">
+                                <div class="card justify-text-center mr-2 ">
+                                    <ol class="font-italic">
+                                        <p>Asparagus</p>
+                                        <p>Bell Peppers</p>
+                                        <p>Broccoli</p>
+                                        <p>Brussell Sprouts</p>
+                                        <p>Cabbage</p>
+                                        <p>Cauliflower</p>
+                                        <p>Celery</p>
+                                        <p>Collard Greens</p>
+                                        <p>Cucumber</p>
+                                        <p>Egg Plant</p>
+                                        <p>Green Beans</p>
+                                        <p>Lettuce</p>
+                                        <p>Mushrooms</p>
+                                        <p>Parsley</p>
+                                        <p>Peppers (All)</p>
+                                        <p>Sweet Potatoes</p>
+                                        <p>Radish</p>
+                                        <p>Mixed Greens</p>
+                                        <p>Spinach</p>
+                                        <p>Steamed Veggies</p>
+                                        <p>Zucchini</p>
+                                        <p>Carrots</p>
+                                        <p>Beans</p>
+                                        <p>Onions</p>
+                                        <p>Pickles</p>
+                                        <p>Corn</p>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingSeven">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"
+                        id="scrollspyHeading7">
+                        <h6><b><i>Protien Substitution List</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <h4><i>Best Protein Options</i></h4>
+                                <p>Salmon</p>
+                                <p>Shrimp</p>
+                                <p>Talapia</p>
+                                <p>Tuna (no can)</p>
+                                <p>Chicken (Skinless Boneless Breast or Thighs)</p>
+                                <p>Steak</p>
+                                <p>Eggs</p>
+                                <p>Isolate Whey Protein</p>
+                                <p>Butter</p>
+                                <p>Greek Yogurt</p>
+                                <p>Cheese(Limited consumption)</p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingEight">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"
+                        id="scrollspyHeading8">
+                        <h6><b><i>Fats Substitution List</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <center>
+            <h7><b><i>Choose One Option</i></b></h7>
+        </center>
+        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class="font-italic">
+                                <h4><i>Best Healthy Fat Options</i></h4>
+                                <p>Almond</p>
+                                <p>Avacados</p>
+                                <p>Cashews</p>
+                                <p>Baked Fish</p>
+                                <p>Flax Seed</p>
+                                <p>Olive Oil</p>
+                                <p>Cocnut Oil</p>
+                                <p>Peanut Butter</p>
+                                <p>Peanuts</p>
+                                <p>Pecans</p>
+                                <p>Sunflower Seeds</p>
+                                <p>Walnuts</p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="accordion " id="accordionExample">
+            <div class="card text-center col-md my-2 p-2">
+                <div class="card-header bg-dark" id="headingNine">
+                    <button class="btn btn-link btn-block text-left text-white " type="button" data-toggle="collapse"
+                        data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine"
+                        id="scrollspyHeading9">
+                        <h6><b><i>Antioxidants</i></b></h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="text-center mr-4">
+                <center>
+                    <div class="col-md mr-2 my-2 p-2">
+                        <div class="card justify-text-center">
+                            <ol class=" font-italic">
+                                <h4><i>Top 20 Antoxidants</i></h4>
+                                <p>Small Red Beans (Dried)</p>
+                                <p>Blueberries (Wild)</p>
+                                <p>Red Kidney Beans</p>
+                                <p>Pinto Beans</p>
+                                <p>Blueberries</p>
+                                <p>Cranberries</p>
+                                <p>Artichokes</p>
+                                <p>Blackberries</p>
+                                <p>Prunes</p>
+                                <p>Raspberries</p>
+                                <p>Strawberries</p>
+                                <p>Red Apples</p>
+                                <p>Granny Smith Apples</p>
+                                <p>Pecans</p>
+                                <p>Sweet Cherries</p>
+                                <p>Black Plums</p>
+                                <p>Russet Potatoes (Cooked)</p>
+                                <p>Black Beans (Dried)</p>
+                                <p>Plums</p>
+                                <p>Gala Apples</p>
+                            </ol>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2024 KROME Fitness. All rights reserved.</p>
+</footer>
+
+</html>

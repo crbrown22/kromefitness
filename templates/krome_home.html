@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KROME Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+    <style>
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('/media/krome-logo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .challenge-banner {
+            background-color: black;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .nutrition {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index'%}">
+                <h4><b><i> KROME FITNESS </i></b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'about'%}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'programonline'%}">Programs</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'shop'%}">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'ksphome'%}">KROME Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login'%}">Login</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1></h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-3">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            <center><img src="/media/coach.jpg" class="rounded" alt="..." height="500" width="400"></center>
+            <center>
+                <p>
+                <h1><b><i>TRANSFORM YOUR HEALTH</b></i></h1>
+                <h2><b>WITH KROME FITNESS!</b></h2>
+                <h4><b><i>With over a <u><i>DECADE</i></u> of experience,</i></b></h4>
+                <h4><b><i>we blend traditional and holistic</i></b></h4>
+                <h4><b><i>methods to help you reach your goals.</i></b></h4>
+                <h2><b>OUR PROGRAMS BUILD <u>STRENGTH</u>,</b></h2>
+                <h2><b><u>ENDURANCE</u>, & <u>OVERALL WELL-BEING</u>.</b></h2>
+                <h4><b><i>Get <u>RESULTS</u> that last—no matter your fitness
+                            level!</i></b></h4>
+                </p>
+                <div class="container py-4">
+                    <a href="{% url 'transformation'%}" class="btn btn-outline-warning btn-md"><b><i>Join</i> KROME
+                            NATION
+                            Now</b></a>
+                </div>
+            </center>
+
+        </div>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <div class="container py-2">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header">Proven Results</div>
+                    <div class="card-body">
+                        <i class="fa fa-thumbs-up fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Thousands of athletes. Real results. Proven success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header">Affordable</div>
+                    <div class="card-body">
+                        <i class="fa fa-money fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Elite programs, without the elite price tag
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header">Full Access</div>
+                    <div class="card-body">
+                        <i class="fa fa-play fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Programs, videos, coaching—everything you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header">Customizable</div>
+                    <div class="card-body">
+                        <i class="fa fa-bolt fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Tailor your training. Get the perfect fit for your goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 21-Day Challenge Section -->
+        <section id="challenge" class="challenge-banner">
+            <div class="container">
+                <center><img src="/media/transformation.PNG" class="rounded" alt="..." height="200" width="300">
+                </center>
+                <h2 class="section-title">21 Days to <b><i><u>CHANGE YOUR LIFE</b></i></u></h2>
+                <h4><i>Boost your metabolism, burn fat, and</i></h4>
+                <h4><i>begin to transform your body and</i></h4>
+                <h4><i>mind with structured workouts, a</i></h4>
+                <h4><i>nutrition plan with substitutes</i></h4>
+                <h4><i>and vegetarian options, and a </i></h4>
+                <h4><i>supportive community.</i></h4>
+                <div class="container py-4">
+                    <a href="{% url 'transformation'%}" class="btn btn-outline-warning btn-md">Sign Up Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workouts Section -->
+        <section id="programs" class="py-4">
+            <div class="container">
+                <center><img src="/media/16week.jpg" class="rounded" alt="..." height="200" width="300"></center>
+                <center>
+                    <h2 class="section-title"> <b><i><u>EXERCISE PROGRAMS</b></i></u></h2>
+                    <h4><i>Our workout plans are designed to challenge</i></h4>
+                    <h4><i>you, keep you motivated, and help you achieve</i></h4>
+                    <h4><i>your fitness goals. From HIIT to strength </i></h4>
+                    <h4><i>training, we offer something for everyone.</i></h4>
+                    <div class="container py-4">
+                        <a href="{% url 'programonline'%}" class="btn btn-outline-warning btn-md">Sign Up Now</a>
+                    </div>
+                </center>
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="nutrition" class="py-4">
+            <center>
+                <div class="nutrition">
+                    <img class="rounded-circle my-4" src="/media/Steak.jpg" alt="Steak" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media/Shrimp.jpg" alt="Shrimp" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media/Salmon.jpg" alt="Salmon" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media//Salad.jpg" alt="Salad" width="250" height="250">
+                    <h2 class="section-title"><b><i><u>NUTRITION PROGRAMS</u></i></b></h2>
+                    <h4><i>Fuel your body with the right nutrition.</i></h4>
+                    <h4><i>Our plans include customizable whole food </i></h4>
+                    <h4><i>options and substitutes for different dietary </i></h4>
+                    <h4><i>needs, ensuring you stay on track while .</i></h4>
+                    <h4><i>enjoying your meals</i></h4>
+
+                    <div class="container py-4">
+                        <a href="{% url 'meals'%}" class="btn btn-outline-warning btn-md">View Nutrition Plans</a>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="members" class="py-4">
+            <center>
+                <div class="members">
+                    <img class="rounded-circle my-4" src="/media/Nicole.jpg" alt="Salad" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media/Coach to.jpg" alt="Steak" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media/Hutch.jpg" alt="Shrimp" width="250" height="250">
+                    <img class="rounded-circle my-4" src="/media/MTA.jpg" alt="Salmon" width="250" height="250">
+                    <h2 class="section-title"><b><i><u>KROME NATION COMMUNITY</u></i></b></h2>
+                    <h4><i>Join the KROME Nation – a fast-growing,</i></h4>
+                    <h4><i>unstoppable community. As a member, you’ll</i></h4>
+                    <h4><i>get weekly workouts, fitness blogs,access.</i></h4>
+                    <h4><i>to the KROME Fitness Exercise Library with,</i></h4>
+                    <h4><i>100+ exercises Enjoy monthly giveaways,</i></h4>
+                    <h4><i>exclusive discounts on apparel products,</i></h4>
+                    <h4><i>and services, and stay connected with</i></h4>
+                    <h4><i>our thriving fitness family.</i></h4>
+                </div>
+                <div class="container py-4">
+                    <a href="#" class="btn btn-outline-warning btn-md">Enter KROME Nation</a>
+                </div>
+            </center>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-3">
+            <p>&copy; 2024 KROME Fitness. All rights reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
