@@ -46,13 +46,13 @@ def meals(request):
 def password_reset(request):
     return render (request, 'password_reset.html') 
 
-def password_rest_complete(request):
+def password_reset_complete(request):
     return render (request, 'password_reset_complete.html')
 
-def password_rest_confirm(request):
+def password_reset_confirm(request):
     return render (request, 'password_reset_confirm.html')
 
-def password_rest_done(request):
+def password_reset_done(request):
     return render (request, 'password_reset_done.html')
 
 def programonline(request):

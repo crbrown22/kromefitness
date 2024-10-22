@@ -13,46 +13,24 @@
     <!--Funawesome CDN-->
     <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="col-md">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3"><a class="nav-link" href="{% url 'kromehome' %}">KROME FITNESS</a>
+                        </li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="{% url 'ksphome'%}">KROME SPORTS
+                                PERFORMANCE</a>
+                        </li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="{% url 'transformation'%}">21-Day
+                                Challenge</a>
+                        </li>
 
-        <img class="mr-3" img src="/media/ksp.jpg" alt="Generic placeholder image" width="50" height="30">
-        <div class="text-center">
-            <a class="navbar-brand" href="{% url 'index' %}">KROME Sports Performance</a>
-
-        </div>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Programs
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="{% url 'flexmob' %}">Mobility & Flexibility</a>
-                    <a class="dropdown-item" href="{% url 'conditioning' %}">Conditoning Speed & Agility</a>
-                    <a class="dropdown-item" href="{% url 'strength' %}">Strength & Power</a>
+                    </ul>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Members</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
-            </li>
-
-        </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-dark" href="{% url 'user-profile' %}">{{ user.first_name }}<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                </li>
-
     </nav>
     <!--End Navbar-->
 
@@ -60,37 +38,28 @@
 
     <!--Table-->
     <div class="container">
-        <div class="row my-4">
-            <div class="col-md-4">
 
-            </div>
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header bg-info text-white">
-                        Profile Page
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <span class="h4"> Profile Information</span>
-                                <hr>
+        <div class="col-md-6 py-4 xm-4">
+            <div class="card">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card-header bg-dark text-warning">
+                                <h4><b><i>Profile Information</i></b></h4>
                                 <form method="POST" enctype="multipart/form-data">
                                     {% csrf_token %}
                                     {{user_form|crispy}}
                                     {{profile_form|crispy}}
-                                    <input class=" btn btn-info" type="Submit" value="Update">
+                                    <input class=" btn btn-outline-warning" type="Submit" value="Update">
                                 </form>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+    
     {% for message in messages %}
     {% if message %}
     <div class='alert alert-{{ message.tags }}'>

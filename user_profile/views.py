@@ -61,5 +61,5 @@ def member_delete(request, pk):
     member= User.objects.get(id=pk)
     if request.method == 'POST':
         member.delete()
-        return redirect('member-delete')
-    return render (request, 'member_delete.html')
+        return redirect('index')
+    return render (request, 'user/member_delete.html')
