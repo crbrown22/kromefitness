@@ -42,8 +42,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'ksphome'%}">KROME Sports
-            Performance</a>
+        <a class="navbar-brand" href="{% url 'ksphome'%}"><b>KROME <i>Sports
+                    Performance</i></b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,10 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="{% url 'programonline'%}">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'shop'%}">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'kromehome'%}">KROME Fitness</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
+                        KROME TV </a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'login'%}">Login</a></li>
             </ul>
         </div>
@@ -199,8 +202,8 @@
                     </div>
                 </div>
                 <div class="container py-1">
-                    <a href="{% url 'ksphome' %}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
-                                Programs</i></b></a>
+                    <a href="{% url 'login' %}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
+                                Athlete Login</i></b></a>
                 </div>
             </div>
         </div>

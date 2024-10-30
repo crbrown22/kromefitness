@@ -42,8 +42,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'ksphome'%}">KROME Sports
-            Performance</a>
+        <a class="navbar-brand" href="{% url 'ksphome'%}"><b>KROME <i>Sports
+            Performance</i></b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,10 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="{% url 'programonline'%}">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'shop'%}">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'kromehome'%}">KROME Fitness</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
+                        KROME TV </a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'login'%}">Login</a></li>
             </ul>
         </div>
@@ -149,59 +152,62 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="container py-1">
-                    <a href="{% url 'programonline' %}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start A
-                                Program</i></b></a>
-                </div>
             </div>
         </div>
-
-        <!-- Feature Cards Section -->
-        <div class="container bg-light py-5">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-dark border-warning text-warning">
-                        <div class="card-header"><b>Proven Results</b></div>
-                        <div class="card-body">
-                            <i class="fa fa-thumbs-up fa-2xl mb-2" aria-hidden="true"></i>
-                            <p>Thousands of athletes. Real results. Proven success.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-dark border-warning text-warning">
-                        <div class="card-header"><b>Affordable</b></div>
-                        <div class="card-body">
-                            <i class="fa fa-money fa-2xl mb-2" aria-hidden="true"></i>
-                            <p>Elite programs, without the elite price tag.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-dark border-warning text-warning">
-                        <div class="card-header"><b>Full Access</b></div>
-                        <div class="card-body">
-                            <i class="fa fa-play fa-2xl mb-2" aria-hidden="true"></i>
-                            <p>Programs, videos, coaching—everything you need.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card bg-dark border-warning text-warning">
-                        <div class="card-header"><b>Customizable</b></div>
-                        <div class="card-body">
-                            <i class="fa fa-bolt fa-2xl mb-2" aria-hidden="true"></i>
-                            <p>Tailor your training. Get the perfect fit for your goals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container py-1">
-                    <a href="{% url 'ksphome'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
-                                Programs</i></b></a>
-                </div>
+        <div class="container py-1">
+            <div class="text-center">
+                <a href="{% url 'programonline'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start A
+                            Program</i></b></a>
             </div>
         </div>
+    </div>
+
+
+    <!-- Feature Cards Section -->
+    <div class="container bg-light py-5">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Proven Results</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-thumbs-up fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Thousands of athletes. Real results. Proven success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Affordable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-money fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Elite programs, without the elite price tag.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Full Access</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-play fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Programs, videos, coaching—everything you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Customizable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-bolt fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Tailor your training. Get the perfect fit for your goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <a href="{% url 'login'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
+                            Athlete Login</i></b></a>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 

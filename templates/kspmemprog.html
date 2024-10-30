@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KROME Sports Performance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+    <style>
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('/media/krome-logo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .challenge-banner {
+            background-color: black;
+            color: black;
+            padding: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'kspmembers'%}">
+                <h4><b><i> KROME Sports Performance </i></b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'kspshop'%}">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'kspmembers'%}">KSP Academy</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
+                            KROME TV </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'user-profile'%}">Profile</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        </section>
+        <!-- Programs Section -->
+        <section id="challenge" class="challenge-banner">
+            <div class="container my-2">
+                <b><i><u>
+                            <h1 class="section-title text-center text-warning">Online Training Programs</h1></b></i></u>
+                <i class="text-light">
+                    <h6>KROME Fitness training programs are designed to transform </h6>
+                    <h6>your life! This custom program provides all the resources and tools</h6>
+                    <h6>you need for success, including a personalized exercise plan via a</h6>
+                    <h6>cutting-edge fitness app, expert nutrition guidance, and real-time</h6>
+                    <h6>support through online chat. Achieve your goals with proven results</h6>
+                    <h6>from a certified personal trainer and nutrition expert.</h6>
+                    <h6>Join now for a life-changing experience!</h6>
+                </i>
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <div class="card">
+                            <img src="/media/52weeks.png" class="card-img-top" alt="Flexibility & Mobility">
+                            <div class="card-body">
+                                <h5 class="card-title">52 Week Online Training Program</h5>
+                                <a href="https://square.link/u/PPjNnSDi" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/16weeks.png" class="card-img-top" alt="Conditioning, Speed & Agility">
+                            <div class="card-body">
+                                <h5 class="card-title">16 Week Online Training Program</h5>
+                                <a href="https://square.link/u/swbYbkuY" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/8weeks.png" class="rounded card-img-top" alt="Strength & Power">
+                            <div class="card-body">
+                                <h5 class="card-title">8 Week Online Training Program</h5>
+                                <a href="https://square.link/u/KZonj3NA" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-2">
+                <b><i><u>
+                            <h1 class="section-title text-center text-warning">Personal Training Sessions</h1>
+                </b></i></u>
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <div class="card">
+                            <img src="/media/pt12.png" class="card-img-top" alt="Flexibility & Mobility">
+                            <div class="card-body">
+                                <h5 class="card-title">12 Sessions (In Person)</h5>
+                                <a href="https://square.link/u/4OMaXX3S" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/pt8.png" class="card-img-top" alt="Conditioning, Speed & Agility">
+                            <div class="card-body">
+                                <h5 class="card-title">8 Sessions (In Person)</h5>
+                                <a href="https://square.link/u/1eb1BDMj" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/pt4.png" class="rounded card-img-top" alt="Strength & Power">
+                            <div class="card-body">
+                                <h5 class="card-title">4 Sessions (in Person)</h5>
+                                <a href="https://square.link/u/PaNAHKD6" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-2">
+                <b><i><u>
+                            <h1 class="section-title text-center text-warning ">Flexibility & Mobility Programs</h1>
+                </b></i></u>
+                <i class="text-light">
+                    <h6>Feel better and move better on your transformative journey with</h6>
+                    <h6>our Flexibility & Mobility Coaching Programs! Receive personalized,</h6>
+                    <h6>simple, and quick dynamic stretching plans tailored to your needs,</h6>
+                    <h6>expert guidance to keep you on track, and unlock the long-term</h6>
+                    <h6>health benefits you deserve. Elevate your well-being today!</h6>
+                </i>
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <div class="card">
+                            <img src="/media/52flex.png" class="card-img-top" alt="Flexibility & Mobility">
+                            <div class="card-body">
+                                <h5 class="card-title">52 Week Flexibility & Mobility Online Program</h5>
+                                <a href="https://square.link/u/5B6JG27P" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/16flex.png" class="card-img-top" alt="Conditioning, Speed & Agility">
+                            <div class="card-body ">
+                                <h5 class="card-title">16 Week Flexibility & Mobility Online Program</h5>
+                                <a href="https://square.link/u/ap5iTEUX" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card my-8">
+                            <img src="/media/8flex.png" class="rounded card-img-top" alt="Strength & Power">
+                            <div class="card-body">
+                                <h5 class="card-title">8 Week Flexibility & Mobility Online Program</h5>
+                                </p>
+                                <a href="https://square.link/u/MF8jWb0e" class="btn btn-outline-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container my-2">
+                        <b><i><u>
+                                    <h1 class="section-title text-center text-warning">Nutrition Programs</h1>
+                        </b></i></u>
+                        <i class="text-light">
+                            <h6>Embark on a transformative journey with our Nutrition Coaching </h6>
+                            <h6>program! Work closely with a certified nutrition coach to receive</h6>
+                            <h6>a personalized meal plan, weekly consultations, macro adjustments,</h6>
+                            <h6>and expert advice on supplements. Whether you follow a specific diet</h6>
+                            <h6>or need help with macro tracking, we've got you covered. Start tracking</h6>
+                            <h6>your progress with our measurement and weight tracker - take the first</h6>
+                            <h6>step towards a healthier you today!</h6>
+                        </i>
+
+                        <div class="row text-center">
+                            <div class="col-md-4 ">
+                                <div class="card">
+                                    <img src="/media/52nutr.png" class="card-img-top" alt="Flexibility & Mobility">
+                                    <div class="card-body">
+                                        <h5 class="card-title">52 Week Nutrition Online Program</h5>
+                                        <a href="https://square.link/u/RUb5Oc8J" class="btn btn-outline-warning">Buy
+                                            Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-8">
+                                    <img src="/media/16nutr.png" class="card-img-top"
+                                        alt="Conditioning, Speed & Agility">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">16 Week Nutrition Online Program</h5>
+                                        <a href="https://square.link/u/v2YpZoxI" class="btn btn-outline-warning">Buy
+                                            Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-8">
+                                    <img src="/media/8nutr.png" class="rounded card-img-top" alt="Strength & Power">
+                                    <div class="card-body">
+                                        <h5 class="card-title">8 Week Nutrition Online Program</h5>
+                                        <a href="https://square.link/u/UlDybyx4" class="btn btn-outline-warning">Buy
+                                            Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center">
+        <p>&copy; 2024 KROME Sports Performance | <a href="#">Privacy Policy</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

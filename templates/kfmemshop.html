@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KROME Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+    <style>
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('/media/krome-logo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .challenge-banner {
+            background-color: black;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .nutrition {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h4><b> KROME <i>Nation</i></b></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'kfmembers'%}">KROME Fitness</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'kspmembers'%}">Sports Performance</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
+                            KROME TV </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center my-4">
+        <b>
+            <h2 class="page-title">KROME Fitness Products & Apparel
+        </b></h2>
+        <h1 class="text-danger"><strong>COMING SOON!!!!</strong></h1>
+
+        <div class="row justify-content-center">
+            <!-- Product 1 -->
+            <div class="col-md-3 col-sm-5 xy-5">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness T-shirt" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">KROME Fitness T-shirt</h5>
+                        <i>
+                            <p class="card-text">Comfortable and stylish KROME Fitness T-shirt.
+                        </i></p>
+                        <p><strong>Price: $25.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-3 col-sm-5">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Water Bottle" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">KROME Water Bottle</h5>
+                        <i>
+                            <p class="card-text">Stay hydrated with this durable water bottle.
+                        </i></p>
+                        <p><strong>Price: $15.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-3 col-sm-5">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Hoodie" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">KROME Hoodie</h5>
+                        <i>
+                            <p class="card-text">Stay warm & stylish with this KROME premium hoodie.
+                        </i></p>
+                        <p><strong>Price: $40.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Product 4 -->
+            <div class="col-md-3 col-sm-3 ">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Hat" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">KROME Hat</h5>
+                        <i>
+                            <p class="card-text">A cool KROME branded cap for your everyday workouts.
+                        </i></p>
+                        <p><strong>Price: $20.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+
+            <!-- Product 5 -->
+            <div class="col-md-3 col-sm-3">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Resistance Bands" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resistance Bands</h5>
+                        <i>
+                            <p class="card-text">Perfect for training on the go.
+                        </i></p>
+                        <p><strong>Price: $10.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-3 col-sm-3">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Gym Bag" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Gym Bag</h5>
+                        <i>
+                            <p class="card-text">Carry all your workout gear in this durable gym bag.
+                        </i></p>
+                        <p><strong>Price: $30.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <!-- Product 4 -->
+            <div class="col-md-3 col-sm-3 ">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Hat" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">KROME Hat</h5>
+                        <i>
+                            <p class="card-text">A cool KROME branded cap for your everyday workouts.
+                        </i></p>
+                        <p><strong>Price: $20.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+
+            <!-- Product 5 -->
+            <div class="col-md-3 col-sm-3">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Resistance Bands" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Resistance Bands</h5>
+                        <i>
+                            <p class="card-text">Perfect for training on the go.
+                        </i></p>
+                        <p><strong>Price: $10.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-3 col-sm-3">
+                <div class="card">
+                    <img src="media/16week.jpg" class="card-img-top" alt="KROME Fitness Gym Bag" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Gym Bag</h5>
+                        <i>
+                            <p class="card-text">Carry all your workout gear in this durable gym bag.
+                        </i></p>
+                        <p><strong>Price: $30.00</strong></p>
+                        <a href="#" class="btn btn-outline-warning">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 KROME Fitness. All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
