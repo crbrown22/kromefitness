@@ -11,15 +11,32 @@
     <style>
         .hero-section {
             background-color: rgba(0, 0, 0, 0.5);
-            background-image: url('/media/krome-logo.jpg');
+            background-image: url('/media/kfintro.png');
             background-size: cover;
             background-position: center;
-            height: 90vh;
+            height: 150vh;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
+        }
+
+        /* Adjust hero section for smaller screens */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 60vh;
+                /* Reduced height for mobile */
+                padding: 1rem;
+                background-position: top;
+                /* Focus image positioning on mobile */
+            }
+
+            .hero-text h1 {
+                font-size: 1.5rem;
+                /* Adjust font size */
+                margin: 0;
+            }
         }
 
 
@@ -76,6 +93,12 @@
     </div>
 </nav>
 <!--End Navbar-->
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-text">
+        <h1></h1>
+    </div>
+</section>
 
 <body>
     <!--Table-->
