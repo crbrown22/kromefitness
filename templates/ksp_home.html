@@ -14,24 +14,23 @@
 
     <style>
         /* Custom styles */
-        .body {
-            background-color: black;
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('/media/camps3.png');
+            background-size: cover;
+            background-position: center;
+            height: 200vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
+
 
         .navbar-brand img {
             height: 50px;
             width: 80px;
-        }
-
-        .hero-section {
-            background-color: black;
-            height: 100vh;
-            color: #c59c21;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
         }
 
         .hero-section h1 {
@@ -103,8 +102,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                
-                <li class="nav-item"><a class="nav-link" href="{% url 'programonline'%}">Programs</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="{% url 'kspmemprog'%}">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'shop'%}">Shop</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'kromehome'%}">KROME Fitness</a></li>
                 <li class="nav-item">
@@ -118,7 +117,13 @@
     </div>
 </nav>
 
+
 <body>
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1></h1>
+        </div>
+    </section>
     <!-- Video Section -->
     <div class="container my-5 text-center">
         <div class="col-md">

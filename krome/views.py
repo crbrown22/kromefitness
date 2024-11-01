@@ -20,9 +20,11 @@ def kromehome(request):
 def about(request):
     return render(request,'about.html')
 
+@login_required(login_url='login')
 def conditioning(request):
     return render(request,'conditioning.html')
 
+@login_required(login_url='login')
 def flexmob(request):
     return render(request,'flexmob.html')
 
@@ -106,7 +108,6 @@ def programonline(request):
 def shop(request):
     return render(request,'shop.html')
 
-
 @login_required(login_url='login')
 def kfmemshop(request):
     return render(request,'kfmemshop.html')
@@ -115,7 +116,7 @@ def kfmemshop(request):
 def kspshop(request):
     return render(request,'kspshop.html')
 
-
+@login_required(login_url='login')
 def strength(request):
     return render(request,'strength.html')
 

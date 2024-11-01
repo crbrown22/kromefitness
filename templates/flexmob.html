@@ -42,7 +42,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'ksphome'%}"><b>KROME <i>Sports
+        <a class="navbar-brand" href="{% url 'kspmembers'%}"><b>KROME <i>Sports
                     Performance</i></b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,13 +50,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="{% url 'programonline'%}">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'kspmemprog'%}">Programs</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'shop'%}">Shop</a></li>
                 <li class="nav-item">
                     <a class="nav-link active" href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
                         KROME TV </a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'login'%}">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'user-profile'%}">Profile</a></li>
             </ul>
         </div>
     </div>
@@ -157,7 +157,7 @@
         </div>
         <div class="container py-1">
             <div class="text-center">
-                <a href="{% url 'programonline'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start A
+                <a href="{% url 'kspmemprog'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start A
                             Program</i></b></a>
             </div>
         </div>
@@ -208,7 +208,292 @@
             </div>
         </div>
     </div>
+    <div class="text-center">
+        <h1 class="mt-4 text-white"><b><i>Strength & Power Building Champions</i></b></h1>
+    </div>
+
+    <!-- Program Highlights Section -->
+    <div class="container bg-white py-4">
+        <div class="row text-center">
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>The Stronger, The Better</i></h5>
+                        <p>Power starts from the ground up. Unlock your potential through precision and strength.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>Boost Performance</i></h5>
+                        <p>Elite results come from elite training. Optimize strength to elevate your game.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>Stay Elite</i></h5>
+                        <p>It’s not just about looking the part. Perform at your peak and dominate the field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Athlete Benefits Section -->
+        <div class="container bg-white text-center py-2">
+            <div class="text-dark mt-3">
+                <h1><b><i><u>MAXIMIZE</u> YOUR POTENTIAL...</b></i></h1>
+                <h1><i>Increase Strength, Speed,</i></h1>
+                <h1><i>and Injury Prevention</i></h1>
+
+                <i><u><b>
+                            <h2 class="mt-3">BECOME ELITE!!</i></u></b></h2>
+            </div>
+            <img class="rounded-circle my-4" src="/media/Shawnee.jpg" alt="KSP Athlete" width="200" height="200">
+            <img class="rounded-circle my-4" src="/media/Hardman.jpg" alt="KSP Athlete" width="200" height="200">
+            <img class="rounded-circle my-4" src="/media/Medball.jpg" alt="KSP Athlete" width="200" height="200">
+            <img class="rounded-circle my-4" src="/media/Choctaw.jpg" alt="KSP Athlete" width="200" height="200">
+        </div>
+
+        <div class="container bg-dark">
+            <div class="text-center">
+                <h1 class="text-dark"><b><i>Strength & Power Perks</i></b></h1>
+            </div>
+
+            <div class="row text-center mt-2">
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>More Explosion</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Unlock the posterior chain to produce true power and speed
+                                    for maximum performance.
+                                </i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>Boost Performance</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Build strength to support joints and enhance stability.</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>Increased Muscle Mass</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Gain muscle mass to dominate sports requiring power and strength.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-1">
+            <div class="text-center">
+                <a href="{% url 'kspmemprog'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start A
+                            Program</i></b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Cards Section -->
+    <div class="container bg-light py-5">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Proven Results</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-thumbs-up fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Thousands of athletes. Real results. Proven success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Affordable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-money fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Elite programs, without the elite price tag.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Full Access</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-play fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Programs, videos, coaching—everything you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Customizable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-bolt fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Tailor your training. Get the perfect fit for your goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <a href="{% url 'login'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
+                            Athlete Login</i></b></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h1 class="mt-4 text-light"><b><i>Speed, Agility, & Conditioning</i></b></h1>
+    </div>
+
+    <!-- Program Highlights Section -->
+    <div class="container bg-white py-4">
+        <div class="row text-center">
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>Speed Kills</i></h5>
+                        <p>Improve takeoff, acceleration, and top speed for better performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>Stay in the Zone</i></h5>
+                        <p>Train in optimal heart rate zones to maximize efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-body">
+                        <h5><i>Change Direction</i></h5>
+                        <p>Enhance agility and power for quick directional changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Athlete Benefits Section 1 -->
+        <div class="container bg-white text-center py-2">
+            <div class="text-dark mt-3">
+                <h1><b><i><u>MAXIMIZE</u> YOUR POTENTIAL...</b></i></h1>
+                <h1><i>Increase Strength, Speed,</i></h1>
+                <h1><i>and Injury Prevention</i></h1>
+                <i><u><b>
+                            <h2 class="mt-3">BECOME ELITE!!</i></u></b></h2>
+
+
+            </div>
+            <img class="rounded-circle my-4" src="/media/Agility.jpg" alt="KSP Athlete" width="200" height="200">
+            <img class="rounded-circle my-4" src="/media/Conditioning (1).jpg" alt="KSP Athlete" width="200"
+                height="200">
+            <img class="rounded-circle my-4" src="/media/Sledwork.jpg" alt="KSP Athlete" width="200" height="200">
+            <img class="rounded-circle my-4" src="/media/Sprint.jpg" alt="KSP Athlete" width="200" height="200">
+        </div>
+        <!--Strength Benefits Section 2-->
+        <div class="container bg-dark">
+            <div class="text-center mt-3">
+                <h1 class="text-dark"><b><i>BENEFITS OF SPEED, AGILITY, & CONDITIONING</i></b></h1>
+            </div>
+
+            <div class="row text-center mt-4">
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>Enhanced Quickness</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Target sudden stops and starts to improve reaction times.</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>Increased VO<sup>2</sup> Max</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Boost endurance for sustained high-level performance.</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark border-warning text-warning">
+                        <div class="card-header">
+                            <h3><b>Better Coordination</b></h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i>Drills build coordination, balance, and strength, reducing injuries.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-1 justify-content-center">
+            <center><a href="{% url 'kspmemprog'%}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>Start
+                            A Program</i></b></a></center>
+        </div>
+    </div>
+    </div>
+
+    <!-- Feature Cards Section -->
+    <div class="container bg-light py-5">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Proven Results</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-thumbs-up fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Thousands of athletes. Real results. Proven success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Affordable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-money fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Elite programs, without the elite price tag.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Full Access</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-play fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Programs, videos, coaching—everything you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark border-warning text-warning">
+                    <div class="card-header"><b>Customizable</b></div>
+                    <div class="card-body">
+                        <i class="fa fa-bolt fa-2xl mb-2" aria-hidden="true"></i>
+                        <p>Tailor your training. Get the perfect fit for your goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <a href="{% url 'login' %}" class="btn btn-outline-warning btn-lg my-4 px-5"><b><i>KSP
+                            Athlete Login</i></b></a>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 
 <footer class="bg-dark text-light text-center">
     <p>&copy; 2024 KROME Sports Performance | <a href="#">Privacy Policy</a></p>
