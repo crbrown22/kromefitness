@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KROME Sports Performance</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="KROME Sports Performance: Promoting a safe, educational environment for students excelling in weightlifting, fitness, and beyond.">
+    <meta name="keywords"
+        content="KROME Sports Performance, weightlifting, fitness, student training, safe environment">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/2c43223b58.js" crossorigin="anonymous"></script>
+
+    <style>
+        .hero-section {
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .mission-card {
+            max-width: 500px;
+            min-height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="{% url 'kspmembers' %}">KROME Sports Performance</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-warning" href="{% url 'kspchallenge' %}" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Member Workout Programs
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'intro6wk' %}">6 Week Challenge</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/@kromefitnessexerciselibrar9313/playlists">
+                            KROME TV </a>
+                        <a class="dropdown-item" href="{% url 'user-profile' %}">Profile</a>
+                        <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="container my-5 text-center">
+        <div class="col-md">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fU599S2F3k4" width="550"
+                    height="450" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+
+    <section class="container d-flex justify-content-center align-items-center my-5 bg-dark py-5">
+        <div class="col-md-8 col-lg-6">
+            <div class="card mission-card">
+                <div class="card-header bg-warning text-dark text-center">
+                    <h4><b><i>KSP Mission Statement</i></b></h4>
+                </div>
+                <div class="card-body text-dark">
+                    <p>
+                        Our primary objective is to foster a safe, empowering, and educational environment that equips
+                        athletes with the tools they need to excel in weightlifting and beyond. Our mission centers
+                        around promoting safety, refining proper form, honing technique, and instilling core values that
+                        extend beyond the weight room.
+                    </p>
+                    <p>
+                        Safety First: We prioritize the safety of our athletes above all else. Through meticulous
+                        supervision, well-maintained equipment, and comprehensive instruction, we ensure that every
+                        athlete can engage in weightlifting activities with confidence and security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
