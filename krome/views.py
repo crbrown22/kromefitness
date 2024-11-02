@@ -41,11 +41,11 @@ def kspmembers(request):
 
 @login_required(login_url='login')
 def kspchallenge(request):
-    return render(request,'ksp6week/homepage.html')
+    return render(request,'ksp6week1/homepage.html')
 
 @login_required(login_url='login')
 def intro6wk(request):
-    return render(request,'ksp6week/intro6wk.html')
+    return render(request,'ksp6week1/intro6wk.html')
 
 def ksphome(request):
     return render(request,'ksp_home.html')
@@ -69,23 +69,23 @@ def logout(request):
 
 @login_required(login_url='login')
 def monday(request):
-    return render(request,'ksp6week/monday.html')
+    return render(request,'ksp6week1/monday.html')
 
 @login_required(login_url='login')
 def tuesday(request):
-    return render(request,'ksp6week/tuesday.html')
+    return render(request,'ksp6week1/tuesday.html')
 
 @login_required(login_url='login')
 def wednesday(request):
-    return render(request,'ksp6week/wednesday.html')
+    return render(request,'ksp6week1/wednesday.html')
 
 @login_required(login_url='login')
 def thursday(request):
-    return render(request,'ksp6week/thursday.html')
+    return render(request,'ksp6week1/thursday.html')
 
 @login_required(login_url='login')
 def friday(request):
-    return render(request,'ksp6week/friday.html')
+    return render(request,'ksp6week1/friday.html')
 
 def meals(request):
     return render(request,'meals.html')

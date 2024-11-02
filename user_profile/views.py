@@ -31,7 +31,7 @@ def profile(request):
     member= User.objects.all()
     
     context={
-        'member': member,
+        'member': member, 
               
     }
     return render(request, 'user/profile.html', context)
